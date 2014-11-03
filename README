@@ -1,0 +1,26 @@
+
+Dependencies
+===============
+- libxml2
+
+
+How to compile?
+===============
+make
+
+
+Usage
+===============
+$ ./xmparser input [output] [validate]
+    where:
+        input = the input file
+        output = the output file (optional parameter)
+        validate = 0 or 1 (optional parameter)
+
+    If validate = 1 then the program will ry to validate the input file using the DASH-MPS.xsd schema.
+
+The program parses a XML file and appends the "_out" string to the values of BaseURL elements.
+If you want to modify the value of a different element, you should modify the value of BASEURL_XPATH macro from
+the xmlparser.h.
+You can also use the program to validate an xml. For different xsd schema you should change the value of 
+XSD_SCHEMA_PATH from the xmlparser header.
