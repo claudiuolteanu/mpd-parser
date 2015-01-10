@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Representation bandwidth="4190760" codecs="avc1.640028" height="1080" id="1" mimeType="video/mp4" width="1920">
+  <AttributesGroup OperatorType="Logical"  OperatorValue="OR">
+      <AttributesGroup OperatorType="Logical"  OperatorValue="AND">
+          <Attribute>
+              <Name> Varsta </Name>
+              <Value> 20 </Value>
+              <Operator> &#60; </Operator>
+          </Attribute>
+          <Attribute>
+              <Name> Sex </Name>
+              <Value> F </Value>
+              <Operator> = </Operator>
+          </Attribute>
+      </AttributesGroup>   
+      
+      <AttributesGroup OperatorType="Logical"  OperatorValue="OR">
+          <Attribute>
+              <Name> Varsta </Name>
+              <Value> 20 </Value>
+              <Operator> &#62; </Operator>
+          </Attribute>
+          <Attribute>
+              <Name> Locatie </Name>
+              <Value> Romania </Value>
+              <Operator> = </Operator>
+          </Attribute>
+      </AttributesGroup>
+      
+      <AttributesGroup OperatorType="Logical"  OperatorValue="AND">
+          <Attribute>
+              <Name> Sex </Name>
+              <Value> M </Value>
+              <Operator> = </Operator>
+          </Attribute>
+      </AttributesGroup>
+  </AttributesGroup>
+</Representation>

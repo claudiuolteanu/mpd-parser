@@ -5,11 +5,15 @@ LDLIBS = -lxml2
 
 .PHONY: all clean
 
-all: xmlparser
+all: xmlparser mpd_policy
 
 xmlparser: xmlparser.o
 
 xmlparser.o: xmlparser.c
 
+mpd_policy: mpd_policy.o
+
+mpd_policy.o: mpd_policy.c
+
 clean:
-	-rm -f *.o *~ xmlparser
+	-rm -f *.o *~ xmlparser mpd_policy
